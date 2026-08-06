@@ -1,0 +1,40 @@
+{
+ "comparison": "Nemotron-3-Embed-8B vs NV-Embed-v2, both title+text corpus, same harness/GPU",
+ "nvembed_variant": "web-search|title+text",
+ "bootstrap_resamples": 10000,
+ "seed": 42,
+ "results": [
+  {
+   "metric": "Recall@5",
+   "nemotron": 69.79166666666667,
+   "nvembed": 69.55,
+   "diff_nemotron_minus_nvembed": 0.2416666666666666,
+   "ci95": [
+    -0.933333333333333,
+    1.4083333333333332
+   ],
+   "bootstrap_p": 0.706,
+   "n": 1000,
+   "questions_nemotron_better": 112,
+   "questions_nvembed_better": 109,
+   "questions_tied": 779,
+   "significant_at_05": false
+  },
+  {
+   "metric": "Recall@10",
+   "nemotron": 77.54166666666666,
+   "nvembed": 78.125,
+   "diff_nemotron_minus_nvembed": -0.5833333333333331,
+   "ci95": [
+    -1.675,
+    0.4666666666666667
+   ],
+   "bootstrap_p": 0.2754,
+   "n": 1000,
+   "questions_nemotron_better": 93,
+   "questions_nvembed_better": 109,
+   "questions_tied": 798,
+   "significant_at_05": false
+  }
+ ]
+}

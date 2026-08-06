@@ -1,0 +1,5 @@
+*.npy
+.tf442/
+.tf520/
+__pycache__/
+data/

@@ -1,0 +1,167 @@
+{
+ "dataset": "musique",
+ "corpus_size": 11656,
+ "n_queries": 1000,
+ "results": [
+  {
+   "provider": "openai-small",
+   "corpus_format": "title+text",
+   "recall_at_5": 55.375,
+   "recall_at_10": 64.775,
+   "n_scored": 1000,
+   "paper_reported_r5": 55.19,
+   "paper_reported_r10": 64.18,
+   "delta_r5_vs_paper": 0.18500000000000227
+  },
+  {
+   "provider": "openai-small",
+   "corpus_format": "text-only",
+   "recall_at_5": 53.48333333333334,
+   "recall_at_10": 62.43333333333333,
+   "n_scored": 1000,
+   "paper_reported_r5": 55.19,
+   "paper_reported_r10": 64.18,
+   "delta_r5_vs_paper": -1.7066666666666563
+  },
+  {
+   "provider": "openai-large",
+   "corpus_format": "title+text",
+   "recall_at_5": 59.48333333333332,
+   "recall_at_10": 70.15,
+   "n_scored": 1000,
+   "paper_reported_r5": 60.02,
+   "paper_reported_r10": 70.28,
+   "delta_r5_vs_paper": -0.5366666666666831
+  },
+  {
+   "provider": "openai-large",
+   "corpus_format": "text-only",
+   "recall_at_5": 58.69166666666666,
+   "recall_at_10": 68.41666666666666,
+   "n_scored": 1000,
+   "paper_reported_r5": 60.02,
+   "paper_reported_r10": 70.28,
+   "delta_r5_vs_paper": -1.3283333333333402
+  },
+  {
+   "provider": "gemini",
+   "corpus_format": "title+text",
+   "recall_at_5": 67.24166666666666,
+   "recall_at_10": 76.35,
+   "n_scored": 1000,
+   "paper_reported_r5": 67.24,
+   "paper_reported_r10": 76.35,
+   "delta_r5_vs_paper": 0.0016666666666651508
+  },
+  {
+   "provider": "gemini",
+   "corpus_format": "text-only",
+   "recall_at_5": 65.78333333333333,
+   "recall_at_10": 75.90833333333332,
+   "n_scored": 1000,
+   "paper_reported_r5": 67.24,
+   "paper_reported_r10": 76.35,
+   "delta_r5_vs_paper": -1.4566666666666634
+  },
+  {
+   "provider": "voyage",
+   "corpus_format": "title+text",
+   "recall_at_5": 54.08333333333333,
+   "recall_at_10": 63.68333333333332,
+   "n_scored": 1000,
+   "paper_reported_r5": 53.97,
+   "paper_reported_r10": 63.65,
+   "delta_r5_vs_paper": 0.11333333333332973
+  },
+  {
+   "provider": "voyage",
+   "corpus_format": "text-only",
+   "recall_at_5": 51.16666666666666,
+   "recall_at_10": 61.19166666666666,
+   "n_scored": 1000,
+   "paper_reported_r5": 53.97,
+   "paper_reported_r10": 63.65,
+   "delta_r5_vs_paper": -2.8033333333333417
+  },
+  {
+   "provider": "cohere",
+   "corpus_format": "title+text",
+   "recall_at_5": 60.20833333333334,
+   "recall_at_10": 69.08333333333334,
+   "n_scored": 1000,
+   "paper_reported_r5": 60.13,
+   "paper_reported_r10": 69.08,
+   "delta_r5_vs_paper": 0.07833333333334025
+  },
+  {
+   "provider": "cohere",
+   "corpus_format": "text-only",
+   "recall_at_5": 57.91666666666667,
+   "recall_at_10": 66.96666666666667,
+   "n_scored": 1000,
+   "paper_reported_r5": 60.13,
+   "paper_reported_r10": 69.08,
+   "delta_r5_vs_paper": -2.213333333333331
+  },
+  {
+   "provider": "nim-e5-v5",
+   "corpus_format": "title+text",
+   "recall_at_5": 57.69166666666666,
+   "recall_at_10": 66.26666666666668,
+   "n_scored": 1000,
+   "paper_reported_r5": 57.6,
+   "paper_reported_r10": 66.2,
+   "delta_r5_vs_paper": 0.09166666666666146
+  },
+  {
+   "provider": "nim-e5-v5",
+   "corpus_format": "text-only",
+   "recall_at_5": 52.95833333333333,
+   "recall_at_10": 62.041666666666664,
+   "n_scored": 1000,
+   "paper_reported_r5": 57.6,
+   "paper_reported_r10": 66.2,
+   "delta_r5_vs_paper": -4.641666666666673
+  },
+  {
+   "provider": "nim-nemotron-1b",
+   "corpus_format": "title+text",
+   "recall_at_5": 64.31666666666666,
+   "recall_at_10": 72.79166666666667,
+   "n_scored": 1000,
+   "paper_reported_r5": 64.32,
+   "paper_reported_r10": 72.79,
+   "delta_r5_vs_paper": -0.0033333333333303017
+  },
+  {
+   "provider": "nim-nemotron-1b",
+   "corpus_format": "text-only",
+   "recall_at_5": 60.858333333333334,
+   "recall_at_10": 69.20833333333333,
+   "n_scored": 1000,
+   "paper_reported_r5": 64.32,
+   "paper_reported_r10": 72.79,
+   "delta_r5_vs_paper": -3.461666666666659
+  },
+  {
+   "provider": "nim-llama-nemotron-1b-v2",
+   "corpus_format": "title+text",
+   "recall_at_5": 63.733333333333334,
+   "recall_at_10": 71.35,
+   "n_scored": 1000,
+   "paper_reported_r5": 63.73,
+   "paper_reported_r10": 71.35,
+   "delta_r5_vs_paper": 0.003333333333337407
+  },
+  {
+   "provider": "nim-llama-nemotron-1b-v2",
+   "corpus_format": "text-only",
+   "recall_at_5": 59.808333333333344,
+   "recall_at_10": 68.31666666666666,
+   "n_scored": 1000,
+   "paper_reported_r5": 63.73,
+   "paper_reported_r10": 71.35,
+   "delta_r5_vs_paper": -3.9216666666666526
+  }
+ ]
+}

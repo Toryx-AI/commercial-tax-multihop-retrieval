@@ -1,0 +1,20 @@
+{
+  "dataset": "musique",
+  "n_queries": 1000,
+  "model": "gpt-4o-mini",
+  "reader_embedder": "BAAI/bge-m3 (instruction-prefixed, best variant)",
+  "k5": {
+    "answer_f1": 31.661641593700413,
+    "tokens_in": 781787,
+    "tokens_out": 4322,
+    "cost_batch_usd": 0.059930625,
+    "cost_std_usd": 0.11986125
+  },
+  "k10": {
+    "answer_f1": 34.98422159539806,
+    "tokens_in": 1471987,
+    "tokens_out": 4460,
+    "cost_batch_usd": 0.111737025,
+    "cost_std_usd": 0.22347405
+  }
+}

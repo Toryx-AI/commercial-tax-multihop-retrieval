@@ -1,0 +1,30 @@
+{
+ "model": "nvidia/Nemotron-3-Embed-8B-BF16",
+ "dataset": "musique",
+ "corpus_size": 11656,
+ "n_queries": 1000,
+ "paper_reported": {
+  "recall_at_5": 69.69,
+  "recall_at_10": 77.45
+ },
+ "results": [
+  {
+   "corpus_format": "title+text",
+   "recall_at_5": 69.79166666666667,
+   "recall_at_10": 77.54166666666666,
+   "n_scored": 1000
+  },
+  {
+   "corpus_format": "text-only",
+   "recall_at_5": 67.25,
+   "recall_at_10": 75.94999999999999,
+   "n_scored": 1000
+  }
+ ],
+ "best": {
+  "corpus_format": "title+text",
+  "recall_at_5": 69.79166666666667,
+  "recall_at_10": 77.54166666666666,
+  "n_scored": 1000
+ }
+}

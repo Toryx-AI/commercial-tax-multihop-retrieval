@@ -1,0 +1,32 @@
+{
+ "dataset": "musique",
+ "results": [
+  {
+   "model": "qwen3vl",
+   "recall_at_5": 59.88333333333332,
+   "recall_at_10": 68.53333333333332,
+   "paper_reported_r5": 59.9,
+   "paper_reported_r10": 68.5,
+   "delta_r5_vs_paper": -0.01666666666667993,
+   "n_scored": 1000
+  },
+  {
+   "model": "mxbai",
+   "recall_at_5": 55.708333333333336,
+   "recall_at_10": 64.35,
+   "paper_reported_r5": 55.7,
+   "paper_reported_r10": 64.4,
+   "delta_r5_vs_paper": 0.00833333333333286,
+   "n_scored": 1000
+  },
+  {
+   "model": "bgem3",
+   "recall_at_5": 54.925000000000004,
+   "recall_at_10": 62.89166666666668,
+   "paper_reported_r5": 54.87,
+   "paper_reported_r10": 62.87,
+   "delta_r5_vs_paper": 0.05500000000000682,
+   "n_scored": 1000
+  }
+ ]
+}

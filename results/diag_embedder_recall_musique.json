@@ -1,0 +1,40 @@
+{
+  "dataset": "musique",
+  "n_queries": 1000,
+  "bars": {
+    "nv_embed_v2": 69.7,
+    "hipporag2_winner": 74.7
+  },
+  "results": [
+    {
+      "variant": "qwen  q=no-instruction",
+      "recall_at_5": 59.88333333333332,
+      "recall_at_2": 46.550000000000004
+    },
+    {
+      "variant": "qwen  q=Instruct/Query template",
+      "recall_at_5": 59.875,
+      "recall_at_2": 45.68333333333334
+    },
+    {
+      "variant": "qwen  q=MTEB-web-search",
+      "recall_at_5": 59.86666666666667,
+      "recall_at_2": 45.675
+    },
+    {
+      "variant": "mxbai q=no-prefix",
+      "recall_at_5": 55.708333333333336,
+      "recall_at_2": 40.474999999999994
+    },
+    {
+      "variant": "mxbai q=retrieval-prefix",
+      "recall_at_5": 55.1,
+      "recall_at_2": 39.96666666666666
+    },
+    {
+      "variant": "qwen  q=task-instr (baseline)",
+      "recall_at_5": 48.25,
+      "recall_at_2": 34.516666666666666
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+title: "When Benchmarks Meet Reality: The True Cost of Multi-Hop Retrieval — replication artifacts"
+message: "If you use these artifacts, please cite the accompanying paper."
+type: software
+authors:
+  - family-names: Sanchez
+    given-names: Luis M.
+    affiliation: SGX Analytics
+  - family-names: Dehnad
+    given-names: Kosrow
+    affiliation: Columbia University
+repository-code: "https://github.com/Toryx-AI/commercial-tax-multihop-retrieval"
+license: MIT
+keywords:
+  - retrieval-augmented generation
+  - multi-hop question answering
+  - embedding models
+  - software licensing
+  - benchmark reproducibility

@@ -1,0 +1,11 @@
+The measurement outputs in results/ are licensed under the Creative Commons
+Attribution 4.0 International License (CC BY 4.0).
+
+https://creativecommons.org/licenses/by/4.0/
+
+This licence covers only the measurement outputs produced by this project. It
+does not cover the upstream MuSiQue corpus, the HippoRAG-2 evaluation split, or
+any third-party model weights referenced by this code, each of which carries its
+own terms. Note in particular that NV-Embed-v2 is licensed cc-by-nc-4.0
+(non-commercial) — a restriction that is itself a subject of the accompanying
+paper.
