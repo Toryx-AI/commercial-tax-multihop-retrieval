@@ -128,9 +128,10 @@ Embedder conventions are not interchangeable:
   `task_type`, Voyage `input_type`, NIM `input_type`).
 - **BGE-M3** — dense mode only here; no instruction prefix required.
 
-NVIDIA's catalog identifiers are not stable across surfaces: `nemotron-3-embed-8b` 404s on the
-hosted NIM endpoint (the 8B is self-host-only), and the HuggingFace name
-`nemotron-3-embed-1b-bf16` 404s there too — the working NIM id is `nemotron-3-embed-1b`.
+NVIDIA model identifiers are channel-specific: `nemotron-3-embed-8b` is not served on the hosted
+NIM endpoint (the 8B tier is self-host-only), and the HuggingFace name `nemotron-3-embed-1b-bf16`
+is not a NIM identifier — the served NIM id is `nemotron-3-embed-1b`. Look identifiers up per
+channel rather than assuming they carry over.
 
 ## Reader configuration
 
