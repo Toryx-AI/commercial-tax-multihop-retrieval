@@ -1,0 +1,108 @@
+{
+  "reference": "Nemotron-3-Embed-8B",
+  "n": 1000,
+  "resamples": 100000,
+  "seed": 42,
+  "mean_correlation": 0.4392736980424987,
+  "crit_marginal": 1.959963985,
+  "crit_simultaneous_maxt": 2.782109570989962,
+  "crit_bonferroni": 2.86526023853213,
+  "comparisons": [
+    {
+      "model": "NV-Embed-v2",
+      "diff_vs_top": 0.2416666666666666,
+      "se": 0.6030821528474235,
+      "sim_lo": -1.4361739628633814,
+      "sim_hi": 1.9195072961967148,
+      "excludes_zero": false
+    },
+    {
+      "model": "Gemini embedding-001",
+      "diff_vs_top": 2.55,
+      "se": 0.7070853498087316,
+      "sim_lo": 0.5828110807903422,
+      "sim_hi": 4.517188919209658,
+      "excludes_zero": true
+    },
+    {
+      "model": "Nemotron-3-Embed-1B",
+      "diff_vs_top": 5.475,
+      "se": 0.5543875986152533,
+      "sim_lo": 3.932632955854362,
+      "sim_hi": 7.0173670441456375,
+      "excludes_zero": true
+    },
+    {
+      "model": "Llama-Nemotron-Embed-1B-v2",
+      "diff_vs_top": 6.058333333333332,
+      "se": 0.6432571969967805,
+      "sim_lo": 4.268721328960413,
+      "sim_hi": 7.847945337706251,
+      "excludes_zero": true
+    },
+    {
+      "model": "Cohere Embed v4",
+      "diff_vs_top": 9.583333333333332,
+      "se": 0.716516112717801,
+      "sim_lo": 7.589906998372616,
+      "sim_hi": 11.576759668294049,
+      "excludes_zero": true
+    },
+    {
+      "model": "Qwen3-VL-Embedding-8B",
+      "diff_vs_top": 9.908333333333331,
+      "se": 0.7338555921577845,
+      "sim_lo": 7.866666666666653,
+      "sim_hi": 11.95000000000001,
+      "excludes_zero": true
+    },
+    {
+      "model": "text-embedding-3-large",
+      "diff_vs_top": 10.308333333333332,
+      "se": 0.7795824462217732,
+      "sim_lo": 8.13944954832397,
+      "sim_hi": 12.477217118342693,
+      "excludes_zero": true
+    },
+    {
+      "model": "nv-embedqa-e5-v5",
+      "diff_vs_top": 12.1,
+      "se": 0.7357673380886245,
+      "sim_lo": 10.05301464668183,
+      "sim_hi": 14.146985353318168,
+      "excludes_zero": true
+    },
+    {
+      "model": "mxbai-embed-large-v1",
+      "diff_vs_top": 14.083333333333334,
+      "se": 0.8244395271135417,
+      "sim_lo": 11.789652234248312,
+      "sim_hi": 16.377014432418356,
+      "excludes_zero": true
+    },
+    {
+      "model": "text-embedding-3-small",
+      "diff_vs_top": 14.416666666666664,
+      "se": 0.7627380082762818,
+      "sim_lo": 12.2946459536834,
+      "sim_hi": 16.53868737964993,
+      "excludes_zero": true
+    },
+    {
+      "model": "BGE-M3",
+      "diff_vs_top": 14.866666666666665,
+      "se": 0.7819201857956684,
+      "sim_lo": 12.691279034014286,
+      "sim_hi": 17.042054299319044,
+      "excludes_zero": true
+    },
+    {
+      "model": "voyage-3.5",
+      "diff_vs_top": 15.708333333333332,
+      "se": 0.7935873124547519,
+      "sim_lo": 13.500486475936766,
+      "sim_hi": 17.9161801907299,
+      "excludes_zero": true
+    }
+  ]
+}

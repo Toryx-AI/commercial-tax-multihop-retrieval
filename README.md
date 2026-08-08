@@ -13,13 +13,13 @@ questions). The corpus is not redistributed; fetch instructions are below.
 ## The result
 
 All thirteen embedders, one harness, every passage embedded as `title\ntext`. Confidence intervals
-are percentile bootstrap over the 1,000 evaluation questions, 10,000 resamples, seed 42.
+are percentile bootstrap over the 1,000 evaluation questions, seed 42; the panel family and headline pair use 100,000 resamples.
 
 | Embedder | Licence | R@5 | 95% CI | R@10 | vs top |
 |---|---|---|---|---|---|
 | Nemotron-3-Embed-8B | Commercial | 69.79 | [68.11, 71.44] | 77.54 | — |
-| NV-Embed-v2 | **Non-commercial** | 69.55 | [67.92, 71.22] | 78.12 | +0.24, p=0.706 **ns** |
-| Gemini embedding-001 | Commercial | 67.24 | [65.49, 69.01] | 76.35 | +2.55, p=0.001 sig |
+| NV-Embed-v2 | **Non-commercial** | 69.55 | [67.92, 71.22] | 78.12 | +0.24, p=0.69 **ns** |
+| Gemini embedding-001 | Commercial | 67.24 | [65.49, 69.01] | 76.35 | +2.55, p=0.0003 sig |
 | Nemotron-3-Embed-1B | Commercial | 64.32 | [62.64, 65.97] | 72.79 | +5.47 sig |
 | Llama-Nemotron-Embed-1B-v2 | Commercial | 63.73 | [62.02, 65.42] | 71.35 | +6.06 sig |
 | Cohere Embed v4 | Commercial | 60.21 | [58.44, 61.97] | 69.08 | +9.58 sig |
@@ -31,13 +31,13 @@ are percentile bootstrap over the 1,000 evaluation questions, 10,000 resamples, 
 | BGE-M3 | Free/open | 54.93 | [53.23, 56.59] | 62.89 | +14.87 sig |
 | Voyage voyage-3.5 | Commercial | 54.08 | [52.27, 55.92] | 63.68 | +15.71 sig |
 
-**NV-Embed-v2 is the only entrant statistically indistinguishable from the top model.** The
+**NV-Embed-v2 is the only entrant statistically indistinguishable from the top model** — and the claim survives correction: under Holm–Bonferroni over the twelve comparisons all eleven rejections stand (`results/panel_multiplicity.json`), and under simultaneous Dunnett-type intervals eleven of twelve exclude zero with NV-Embed-v2 the sole exception (`results/panel_simultaneous_ci.json`). The
 commercial tax, measured against the non-commercial anchor:
 
 | | diff | 95% CI | p | |
 |---|---|---|---|---|
 | Best commercial **before** Nemotron (Gemini embedding-001) | +2.31 | [+0.91, +3.69] | 0.002 | **significant** |
-| Best commercial **after** Nemotron (Nemotron-3-Embed-8B) | −0.24 | [−1.41, +0.93] | 0.706 | not significant |
+| Best commercial **after** Nemotron (Nemotron-3-Embed-8B) | −0.24 | [−1.43, +0.94] | 0.69 | not significant |
 
 The tax was real and recent. It has closed at the frontier — not across the category: eleven of
 twelve commercially-deployable entrants are still significantly behind.
@@ -45,7 +45,7 @@ twelve commercially-deployable entrants are still significantly behind.
 ## The correction this repository documents
 
 An earlier draft reported NV-Embed-v2 at **67.1** R@5 and treated the gap against its published
-69.4–69.7 as a finding about harness variance. It was our bug.
+69.7 as a finding about harness variance. It was our bug.
 
 `code/build_nvembed_index.py` embeds passages as **text only** (line 54,
 `texts = [p["text"] for p in corpus]`) while every other entrant received `"{title}\n{text}"`. On
@@ -53,8 +53,10 @@ MuSiQue the multi-hop chain runs through Wikipedia entity titles, so dropping th
 points — and it was dropped for exactly one model, the anchor the headline claim is asserted
 against.
 
-We re-ran the whole panel to check. Twelve of thirteen reproduce their original figures on
-`title\ntext`, three to the decimal:
+We re-ran the whole panel to check. All thirteen reproduce on `title\ntext`, three to the decimal.
+The anchor itself has a dedicated end-to-end replicate (2026-08-08): corpus re-embedded from raw
+text into a fresh cache, same configuration — identical on all 1,000 per-question scores, Δ=+0.00
+(`results/nvembed_replicate_run2.json`):
 
 | Embedder | title+text | Δ vs draft | text-only |
 |---|---|---|---|
@@ -70,7 +72,10 @@ We re-ran the whole panel to check. Twelve of thirteen reproduce their original 
 | voyage-3.5 | 54.08 | +0.11 | 51.17 |
 | OpenAI 3-small | 55.38 | +0.19 | 53.48 |
 | OpenAI 3-large | 59.48 | −0.54 | 58.69 |
-| **NV-Embed-v2** | **69.55** | **+2.48** | 67.07 |
+| **NV-Embed-v2** | **69.55** | **+0.00** | 67.09 |
+
+(NV-Embed-v2's Δ is the dedicated replicate above; both its columns use the `web-search` query
+instruction, and the 2.46-point title-vs-text gap is a format penalty, not run-to-run variation.)
 
 Query-instruction choice does *not* explain the gap: across the text-only corpus every instructed
 variant lands 66.6–67.1, and the original harness already used the best of them
@@ -105,6 +110,9 @@ EMBED_DEVICE=cpu python3 code/selfhosted_panel_perq.py
 # Statistics (no GPU)
 python3 code/paired_bootstrap_headline.py
 python3 code/panel_confidence_intervals.py
+python3 code/panel_multiplicity.py --resamples 100000    # Holm–Bonferroni over the 12 comparisons
+python3 code/panel_intervals.py --resamples 100000       # R@10 lift + format-penalty paired CIs
+python3 code/panel_simultaneous_ci.py --resamples 100000 # Dunnett-type simultaneous CIs (bootstrap max-t)
 ```
 
 GPU work ran on a single NVIDIA RTX A6000 (48GB). Both GPU models were measured on the same device
@@ -144,12 +152,16 @@ token-overlap F1 over the gold answer and its aliases.
 | `results/selfhosted_panel_perq.json` (+`_vectors`) | Qwen3-VL, mxbai, BGE-M3 |
 | `results/diag_embedder_recall_musique.json` | Qwen3-VL / mxbai query-format sweep (the 11.6-point swing) |
 | `results/bge_m3_recall_musique.json`, `..._reader_f1_...` | BGE-M3 recall, Answer F1, measured API cost |
+| `results/panel_multiplicity.json` | exact paired p-values, Holm–Bonferroni step-down, B=100k |
+| `results/panel_intervals.json` | R@10−R@5 lift CIs (13) + format-penalty CIs (10), B=100k |
+| `results/panel_simultaneous_ci.json` | simultaneous Dunnett-type CIs vs the top entrant, B=100k |
+| `results/nvembed_replicate_run2.json` (+`_perq`) | the anchor's end-to-end replicate: Δ=+0.00 on all 1,000 questions |
 
 **Per-question files** (`*_perq*.json`) hold one recall fraction per scored question, in corpus
 order, for every entrant. Any confidence interval or paired test in the paper can be recomputed
 from these without a GPU — and comparisons we did not think to run are available to you.
 
-Embedding matrices (`.npy`, 2.2GB total) are not in git. See the companion HuggingFace dataset.
+Embedding matrices (`.npy`, ~3GB including the replicate's independent corpus embedding) are not in git. Companion dataset: `toryx-ai/commercial-tax-musique-embeddings` on HuggingFace (pinned revision cited in the paper).
 
 ## Licence
 

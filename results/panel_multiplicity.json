@@ -1,0 +1,130 @@
+{
+  "reference": "Nemotron-3-Embed-8B",
+  "n": 1000,
+  "resamples": 100000,
+  "seed": 42,
+  "alpha": 0.05,
+  "correction": "holm-bonferroni",
+  "comparisons": [
+    {
+      "model": "Nemotron-3-Embed-1B",
+      "recall5": 64.31666666666666,
+      "diff_vs_top": 5.475,
+      "ci_lo": 4.3999999999999995,
+      "ci_hi": 6.566666666666666,
+      "p_raw": 1.999980000199998e-05,
+      "holm_threshold": 0.004166666666666667,
+      "holm_reject": true
+    },
+    {
+      "model": "Llama-Nemotron-Embed-1B-v2",
+      "recall5": 63.733333333333334,
+      "diff_vs_top": 6.058333333333333,
+      "ci_lo": 4.791666666666667,
+      "ci_hi": 7.324999999999999,
+      "p_raw": 1.999980000199998e-05,
+      "holm_threshold": 0.004545454545454546,
+      "holm_reject": true
+    },
+    {
+      "model": "Cohere Embed v4",
+      "recall5": 60.20833333333334,
+      "diff_vs_top": 9.583333333333334,
+      "ci_lo": 8.191666666666665,
+      "ci_hi": 10.991666666666667,
+      "p_raw": 1.999980000199998e-05,
+      "holm_threshold": 0.005,
+      "holm_reject": true
+    },
+    {
+      "model": "Qwen3-VL-Embedding-8B",
+      "recall5": 59.88333333333332,
+      "diff_vs_top": 9.908333333333335,
+      "ci_lo": 8.483333333333333,
+      "ci_hi": 11.358333333333334,
+      "p_raw": 1.999980000199998e-05,
+      "holm_threshold": 0.005555555555555556,
+      "holm_reject": true
+    },
+    {
+      "model": "text-embedding-3-large",
+      "recall5": 59.48333333333332,
+      "diff_vs_top": 10.308333333333334,
+      "ci_lo": 8.783333333333333,
+      "ci_hi": 11.825,
+      "p_raw": 1.999980000199998e-05,
+      "holm_threshold": 0.00625,
+      "holm_reject": true
+    },
+    {
+      "model": "nv-embedqa-e5-v5",
+      "recall5": 57.69166666666666,
+      "diff_vs_top": 12.1,
+      "ci_lo": 10.658333333333335,
+      "ci_hi": 13.55,
+      "p_raw": 1.999980000199998e-05,
+      "holm_threshold": 0.0071428571428571435,
+      "holm_reject": true
+    },
+    {
+      "model": "mxbai-embed-large-v1",
+      "recall5": 55.708333333333336,
+      "diff_vs_top": 14.083333333333334,
+      "ci_lo": 12.483333333333334,
+      "ci_hi": 15.7,
+      "p_raw": 1.999980000199998e-05,
+      "holm_threshold": 0.008333333333333333,
+      "holm_reject": true
+    },
+    {
+      "model": "text-embedding-3-small",
+      "recall5": 55.375,
+      "diff_vs_top": 14.41666666666667,
+      "ci_lo": 12.941666666666665,
+      "ci_hi": 15.925,
+      "p_raw": 1.999980000199998e-05,
+      "holm_threshold": 0.01,
+      "holm_reject": true
+    },
+    {
+      "model": "BGE-M3",
+      "recall5": 54.925000000000004,
+      "diff_vs_top": 14.866666666666669,
+      "ci_lo": 13.341666666666665,
+      "ci_hi": 16.400000000000002,
+      "p_raw": 1.999980000199998e-05,
+      "holm_threshold": 0.0125,
+      "holm_reject": true
+    },
+    {
+      "model": "voyage-3.5",
+      "recall5": 54.08333333333333,
+      "diff_vs_top": 15.708333333333336,
+      "ci_lo": 14.166666666666666,
+      "ci_hi": 17.266666666666666,
+      "p_raw": 1.999980000199998e-05,
+      "holm_threshold": 0.016666666666666666,
+      "holm_reject": true
+    },
+    {
+      "model": "Gemini embedding-001",
+      "recall5": 67.24166666666666,
+      "diff_vs_top": 2.55,
+      "ci_lo": 1.15,
+      "ci_hi": 3.9252083333332854,
+      "p_raw": 0.00033999660003399966,
+      "holm_threshold": 0.025,
+      "holm_reject": true
+    },
+    {
+      "model": "NV-Embed-v2",
+      "recall5": 69.55,
+      "diff_vs_top": 0.24166666666666659,
+      "ci_lo": -0.9416666666666669,
+      "ci_hi": 1.425,
+      "p_raw": 0.6872531274687254,
+      "holm_threshold": 0.05,
+      "holm_reject": false
+    }
+  ]
+}
