@@ -1,7 +1,7 @@
-# When Benchmarks Meet Reality — replication artifacts
+# The Commercial Tax — replication artifacts
 
-Harness code and measurement artifacts for *When Benchmarks Meet Reality: The True Cost of
-Multi-Hop Retrieval* (Sanchez & Dehnad).
+Harness code and measurement artifacts for *The Commercial Tax: Rent-vs-Own Blind Spots in Multi-Hop
+Retrieval Benchmarks* (Sanchez & Dehnad).
 
 The paper argues that the multi-hop retrieval literature reports quality numbers stripped of the
 two things a buyer needs — whether the retrieval backbone is legal to deploy commercially, and what
