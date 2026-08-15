@@ -1,0 +1,134 @@
+{
+  "reference": "Nemotron-3-Embed-8B",
+  "metric": "r5",
+  "n": 1000,
+  "comparisons": 12,
+  "resamples": 100000,
+  "seed": 42,
+  "method": "bootstrap max-t (Dunnett-type) over jointly resampled questions",
+  "critical_value": 2.7935078301138563,
+  "marginal_critical_value": 1.96,
+  "n_excluding_zero": 11,
+  "rows": [
+    {
+      "model": "Voyage voyage-3.5",
+      "diff": -15.708333333333332,
+      "se": 0.7935873124547519,
+      "sim_ci_lo": -17.92522570455469,
+      "sim_ci_hi": -13.491440962111971,
+      "excludes_zero": true,
+      "marginal_ci_lo": -17.263764465744647,
+      "marginal_ci_hi": -14.152902200922018
+    },
+    {
+      "model": "BGE-M3",
+      "diff": -14.866666666666665,
+      "se": 0.7819201857956684,
+      "sim_ci_lo": -17.050966828210946,
+      "sim_ci_hi": -12.682366505122385,
+      "excludes_zero": true,
+      "marginal_ci_lo": -16.399230230826177,
+      "marginal_ci_hi": -13.334103102507155
+    },
+    {
+      "model": "OpenAI text-embedding-3-small",
+      "diff": -14.416666666666664,
+      "se": 0.7627380082762818,
+      "sim_ci_lo": -16.547381265111905,
+      "sim_ci_hi": -12.285952068221423,
+      "excludes_zero": true,
+      "marginal_ci_lo": -15.911633162888176,
+      "marginal_ci_hi": -12.921700170445153
+    },
+    {
+      "model": "mxbai-embed-large-v1",
+      "diff": -14.083333333333334,
+      "se": 0.8244395271135417,
+      "sim_ci_lo": -16.386411607780378,
+      "sim_ci_hi": -11.78025505888629,
+      "excludes_zero": true,
+      "marginal_ci_lo": -15.699234806475875,
+      "marginal_ci_hi": -12.467431860190793
+    },
+    {
+      "model": "nv-embedqa-e5-v5",
+      "diff": -12.1,
+      "se": 0.7357673380886245,
+      "sim_ci_lo": -14.1553718200926,
+      "sim_ci_hi": -10.044628179907399,
+      "excludes_zero": true,
+      "marginal_ci_lo": -13.542103982653703,
+      "marginal_ci_hi": -10.657896017346296
+    },
+    {
+      "model": "OpenAI text-embedding-3-large",
+      "diff": -10.308333333333332,
+      "se": 0.7795824462217732,
+      "sim_ci_lo": -12.48610300107317,
+      "sim_ci_hi": -8.130563665593494,
+      "excludes_zero": true,
+      "marginal_ci_lo": -11.836314927928008,
+      "marginal_ci_hi": -8.780351738738656
+    },
+    {
+      "model": "Qwen3-VL-Embedding-8B",
+      "diff": -9.908333333333331,
+      "se": 0.7338555921577845,
+      "sim_ci_lo": -11.958364676198943,
+      "sim_ci_hi": -7.858301990467719,
+      "excludes_zero": true,
+      "marginal_ci_lo": -11.346690293962588,
+      "marginal_ci_hi": -8.469976372704075
+    },
+    {
+      "model": "Cohere Embed v4",
+      "diff": -9.583333333333332,
+      "se": 0.716516112717801,
+      "sim_ci_lo": -11.584926704613252,
+      "sim_ci_hi": -7.581739962053413,
+      "excludes_zero": true,
+      "marginal_ci_lo": -10.987704914260222,
+      "marginal_ci_hi": -8.178961752406442
+    },
+    {
+      "model": "Llama-Nemotron-Embed-1B-v2",
+      "diff": -6.058333333333332,
+      "se": 0.6432571969967805,
+      "sim_ci_lo": -7.85527734992093,
+      "sim_ci_hi": -4.261389316745734,
+      "excludes_zero": true,
+      "marginal_ci_lo": -7.319117439447021,
+      "marginal_ci_hi": -4.797549227219642
+    },
+    {
+      "model": "Nemotron-3-Embed-1B",
+      "diff": -5.475,
+      "se": 0.5543875986152533,
+      "sim_ci_lo": -7.023686097649728,
+      "sim_ci_hi": -3.926313902350272,
+      "excludes_zero": true,
+      "marginal_ci_lo": -6.561599693285896,
+      "marginal_ci_hi": -4.388400306714103
+    },
+    {
+      "model": "Gemini embedding-001",
+      "diff": -2.55,
+      "se": 0.7070853498087316,
+      "sim_ci_lo": -4.525248461249487,
+      "sim_ci_hi": -0.5747515387505129,
+      "excludes_zero": true,
+      "marginal_ci_lo": -3.935887285625114,
+      "marginal_ci_hi": -1.164112714374886
+    },
+    {
+      "model": "NV-Embed-v2",
+      "diff": -0.2416666666666666,
+      "se": 0.6030821528474235,
+      "sim_ci_lo": -1.9263813828478658,
+      "sim_ci_hi": 1.4430480495145324,
+      "excludes_zero": false,
+      "marginal_ci_lo": -1.4237076862476168,
+      "marginal_ci_hi": 0.9403743529142835
+    }
+  ]
+}

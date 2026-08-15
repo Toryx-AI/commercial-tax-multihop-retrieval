@@ -1,0 +1,8 @@
+{
+ "fetched_utc": "2026-08-15T22:37:43.304865Z",
+ "endpoint": "https://huggingface.co/api/models/BAAI/bge-m3",
+ "id": "BAAI/bge-m3",
+ "downloads_trailing_30d": 35594133,
+ "likes": 3402,
+ "note": "HuggingFace's `downloads` field is the trailing-30-day count; cited in the paper as '35.6M HuggingFace downloads in the thirty days to 2026-08-15'."
+}
