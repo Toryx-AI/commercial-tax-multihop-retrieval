@@ -1,0 +1,161 @@
+{
+ "dataset": "2wikimultihopqa",
+ "corpus_size": 6119,
+ "n_queries": 1000,
+ "results": [
+  {
+   "provider": "gemini-vertex",
+   "corpus_format": "title+text",
+   "recall_at_5": 76.6,
+   "recall_at_10": 80.75,
+   "n_scored": 1000
+  },
+  {
+   "provider": "gemini-vertex",
+   "corpus_format": "text-only",
+   "recall_at_5": 75.8,
+   "recall_at_10": 80.075,
+   "n_scored": 1000
+  },
+  {
+   "provider": "openai-small",
+   "corpus_format": "title+text",
+   "recall_at_5": 70.775,
+   "recall_at_10": 74.47500000000001,
+   "n_scored": 1000,
+   "paper_reported_r5": 55.19,
+   "paper_reported_r10": 64.18,
+   "delta_r5_vs_paper": 15.585000000000008
+  },
+  {
+   "provider": "openai-small",
+   "corpus_format": "text-only",
+   "recall_at_5": 69.95,
+   "recall_at_10": 74.425,
+   "n_scored": 1000,
+   "paper_reported_r5": 55.19,
+   "paper_reported_r10": 64.18,
+   "delta_r5_vs_paper": 14.760000000000005
+  },
+  {
+   "provider": "openai-large",
+   "corpus_format": "title+text",
+   "recall_at_5": 74.85000000000001,
+   "recall_at_10": 79.25,
+   "n_scored": 1000,
+   "paper_reported_r5": 60.02,
+   "paper_reported_r10": 70.28,
+   "delta_r5_vs_paper": 14.830000000000005
+  },
+  {
+   "provider": "openai-large",
+   "corpus_format": "text-only",
+   "recall_at_5": 74.0,
+   "recall_at_10": 78.64999999999999,
+   "n_scored": 1000,
+   "paper_reported_r5": 60.02,
+   "paper_reported_r10": 70.28,
+   "delta_r5_vs_paper": 13.979999999999997
+  },
+  {
+   "provider": "voyage",
+   "corpus_format": "title+text",
+   "recall_at_5": 69.825,
+   "recall_at_10": 73.8,
+   "n_scored": 1000,
+   "paper_reported_r5": 53.97,
+   "paper_reported_r10": 63.65,
+   "delta_r5_vs_paper": 15.855000000000004
+  },
+  {
+   "provider": "voyage",
+   "corpus_format": "text-only",
+   "recall_at_5": 68.95,
+   "recall_at_10": 73.65,
+   "n_scored": 1000,
+   "paper_reported_r5": 53.97,
+   "paper_reported_r10": 63.65,
+   "delta_r5_vs_paper": 14.980000000000004
+  },
+  {
+   "provider": "cohere",
+   "corpus_format": "title+text",
+   "recall_at_5": 73.25,
+   "recall_at_10": 76.67500000000001,
+   "n_scored": 1000,
+   "paper_reported_r5": 60.13,
+   "paper_reported_r10": 69.08,
+   "delta_r5_vs_paper": 13.119999999999997
+  },
+  {
+   "provider": "cohere",
+   "corpus_format": "text-only",
+   "recall_at_5": 73.15,
+   "recall_at_10": 76.3,
+   "n_scored": 1000,
+   "paper_reported_r5": 60.13,
+   "paper_reported_r10": 69.08,
+   "delta_r5_vs_paper": 13.020000000000003
+  },
+  {
+   "provider": "nim-e5-v5",
+   "corpus_format": "title+text",
+   "recall_at_5": 72.6,
+   "recall_at_10": 76.825,
+   "n_scored": 1000,
+   "paper_reported_r5": 57.6,
+   "paper_reported_r10": 66.2,
+   "delta_r5_vs_paper": 14.999999999999993
+  },
+  {
+   "provider": "nim-e5-v5",
+   "corpus_format": "text-only",
+   "recall_at_5": 71.975,
+   "recall_at_10": 75.725,
+   "n_scored": 1000,
+   "paper_reported_r5": 57.6,
+   "paper_reported_r10": 66.2,
+   "delta_r5_vs_paper": 14.374999999999993
+  },
+  {
+   "provider": "nim-nemotron-1b",
+   "corpus_format": "title+text",
+   "recall_at_5": 73.275,
+   "recall_at_10": 76.7,
+   "n_scored": 1000,
+   "paper_reported_r5": 64.32,
+   "paper_reported_r10": 72.79,
+   "delta_r5_vs_paper": 8.955000000000013
+  },
+  {
+   "provider": "nim-nemotron-1b",
+   "corpus_format": "text-only",
+   "recall_at_5": 73.05,
+   "recall_at_10": 76.925,
+   "n_scored": 1000,
+   "paper_reported_r5": 64.32,
+   "paper_reported_r10": 72.79,
+   "delta_r5_vs_paper": 8.730000000000004
+  },
+  {
+   "provider": "nim-llama-nemotron-1b-v2",
+   "corpus_format": "title+text",
+   "recall_at_5": 73.725,
+   "recall_at_10": 77.14999999999999,
+   "n_scored": 1000,
+   "paper_reported_r5": 63.73,
+   "paper_reported_r10": 71.35,
+   "delta_r5_vs_paper": 9.994999999999997
+  },
+  {
+   "provider": "nim-llama-nemotron-1b-v2",
+   "corpus_format": "text-only",
+   "recall_at_5": 72.89999999999999,
+   "recall_at_10": 76.75,
+   "n_scored": 1000,
+   "paper_reported_r5": 63.73,
+   "paper_reported_r10": 71.35,
+   "delta_r5_vs_paper": 9.169999999999995
+  }
+ ]
+}

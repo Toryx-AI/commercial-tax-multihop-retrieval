@@ -1,0 +1,161 @@
+{
+ "dataset": "hotpotqa",
+ "corpus_size": 9811,
+ "n_queries": 1000,
+ "results": [
+  {
+   "provider": "gemini-vertex",
+   "corpus_format": "title+text",
+   "recall_at_5": 95.75,
+   "recall_at_10": 98.1,
+   "n_scored": 1000
+  },
+  {
+   "provider": "gemini-vertex",
+   "corpus_format": "text-only",
+   "recall_at_5": 95.7,
+   "recall_at_10": 98.35000000000001,
+   "n_scored": 1000
+  },
+  {
+   "provider": "openai-small",
+   "corpus_format": "title+text",
+   "recall_at_5": 81.3,
+   "recall_at_10": 88.64999999999999,
+   "n_scored": 1000,
+   "paper_reported_r5": 55.19,
+   "paper_reported_r10": 64.18,
+   "delta_r5_vs_paper": 26.11
+  },
+  {
+   "provider": "openai-small",
+   "corpus_format": "text-only",
+   "recall_at_5": 81.0,
+   "recall_at_10": 88.75,
+   "n_scored": 1000,
+   "paper_reported_r5": 55.19,
+   "paper_reported_r10": 64.18,
+   "delta_r5_vs_paper": 25.810000000000002
+  },
+  {
+   "provider": "openai-large",
+   "corpus_format": "title+text",
+   "recall_at_5": 88.6,
+   "recall_at_10": 93.60000000000001,
+   "n_scored": 1000,
+   "paper_reported_r5": 60.02,
+   "paper_reported_r10": 70.28,
+   "delta_r5_vs_paper": 28.57999999999999
+  },
+  {
+   "provider": "openai-large",
+   "corpus_format": "text-only",
+   "recall_at_5": 88.55,
+   "recall_at_10": 93.65,
+   "n_scored": 1000,
+   "paper_reported_r5": 60.02,
+   "paper_reported_r10": 70.28,
+   "delta_r5_vs_paper": 28.529999999999994
+  },
+  {
+   "provider": "voyage",
+   "corpus_format": "title+text",
+   "recall_at_5": 87.15,
+   "recall_at_10": 92.60000000000001,
+   "n_scored": 1000,
+   "paper_reported_r5": 53.97,
+   "paper_reported_r10": 63.65,
+   "delta_r5_vs_paper": 33.18000000000001
+  },
+  {
+   "provider": "voyage",
+   "corpus_format": "text-only",
+   "recall_at_5": 86.85000000000001,
+   "recall_at_10": 92.45,
+   "n_scored": 1000,
+   "paper_reported_r5": 53.97,
+   "paper_reported_r10": 63.65,
+   "delta_r5_vs_paper": 32.88000000000001
+  },
+  {
+   "provider": "cohere",
+   "corpus_format": "title+text",
+   "recall_at_5": 89.45,
+   "recall_at_10": 94.15,
+   "n_scored": 1000,
+   "paper_reported_r5": 60.13,
+   "paper_reported_r10": 69.08,
+   "delta_r5_vs_paper": 29.32
+  },
+  {
+   "provider": "cohere",
+   "corpus_format": "text-only",
+   "recall_at_5": 88.6,
+   "recall_at_10": 94.1,
+   "n_scored": 1000,
+   "paper_reported_r5": 60.13,
+   "paper_reported_r10": 69.08,
+   "delta_r5_vs_paper": 28.46999999999999
+  },
+  {
+   "provider": "nim-e5-v5",
+   "corpus_format": "title+text",
+   "recall_at_5": 87.75,
+   "recall_at_10": 93.25,
+   "n_scored": 1000,
+   "paper_reported_r5": 57.6,
+   "paper_reported_r10": 66.2,
+   "delta_r5_vs_paper": 30.15
+  },
+  {
+   "provider": "nim-e5-v5",
+   "corpus_format": "text-only",
+   "recall_at_5": 90.0,
+   "recall_at_10": 94.3,
+   "n_scored": 1000,
+   "paper_reported_r5": 57.6,
+   "paper_reported_r10": 66.2,
+   "delta_r5_vs_paper": 32.4
+  },
+  {
+   "provider": "nim-nemotron-1b",
+   "corpus_format": "title+text",
+   "recall_at_5": 93.30000000000001,
+   "recall_at_10": 96.2,
+   "n_scored": 1000,
+   "paper_reported_r5": 64.32,
+   "paper_reported_r10": 72.79,
+   "delta_r5_vs_paper": 28.980000000000018
+  },
+  {
+   "provider": "nim-nemotron-1b",
+   "corpus_format": "text-only",
+   "recall_at_5": 93.60000000000001,
+   "recall_at_10": 96.85000000000001,
+   "n_scored": 1000,
+   "paper_reported_r5": 64.32,
+   "paper_reported_r10": 72.79,
+   "delta_r5_vs_paper": 29.280000000000015
+  },
+  {
+   "provider": "nim-llama-nemotron-1b-v2",
+   "corpus_format": "title+text",
+   "recall_at_5": 89.3,
+   "recall_at_10": 94.3,
+   "n_scored": 1000,
+   "paper_reported_r5": 63.73,
+   "paper_reported_r10": 71.35,
+   "delta_r5_vs_paper": 25.57
+  },
+  {
+   "provider": "nim-llama-nemotron-1b-v2",
+   "corpus_format": "text-only",
+   "recall_at_5": 89.2,
+   "recall_at_10": 94.45,
+   "n_scored": 1000,
+   "paper_reported_r5": 63.73,
+   "paper_reported_r10": 71.35,
+   "delta_r5_vs_paper": 25.470000000000006
+  }
+ ]
+}
