@@ -1,0 +1,81 @@
+{
+ "n": 1000,
+ "headline_pair": {
+  "top": "Nemotron-3-Embed-8B",
+  "anchor": "NV-Embed-v2",
+  "metric": "Recall@5",
+  "mean_diff_top_minus_anchor": 0.24166666666666659,
+  "paired_sd": 19.071132191956593,
+  "paired_se": 0.6030821528474235,
+  "wins_top": 112,
+  "wins_anchor": 109,
+  "ties": 779
+ },
+ "power": {
+  "alpha": 0.05,
+  "power": 0.8,
+  "mde_two_sided": 1.6895860447250874,
+  "tost_margin": 0.5,
+  "tost_n_true_diff_zero": 12458.962014910356,
+  "tost_n_true_diff_observed": 33694.59205774691
+ },
+ "per_question_r5_correlation": {
+  "mean_pairwise": 0.6368156675424698,
+  "leaders": 0.7451310704676917,
+  "note": "Pearson over the 1,000 per-question Recall@5 scores; distinct from the difference-statistic correlation in panel_simultaneous_ci.json"
+ },
+ "r10_minus_r5_lift": {
+  "BGE-M3": {
+   "mean": 7.966666666666668,
+   "se": 0.5282361952028343
+  },
+  "Cohere Embed v4": {
+   "mean": 8.875,
+   "se": 0.5532217622320149
+  },
+  "Gemini embedding-001": {
+   "mean": 9.108333333333334,
+   "se": 0.5617986921917193
+  },
+  "Llama-Nemotron-Embed-1B-v2": {
+   "mean": 7.616666666666668,
+   "se": 0.5180404094912539
+  },
+  "NV-Embed-v2": {
+   "mean": 8.575,
+   "se": 0.545081380101316
+  },
+  "Nemotron-3-Embed-1B": {
+   "mean": 8.475,
+   "se": 0.5467718404935168
+  },
+  "Nemotron-3-Embed-8B": {
+   "mean": 7.75,
+   "se": 0.5165956230015611
+  },
+  "OpenAI text-embedding-3-large": {
+   "mean": 10.666666666666668,
+   "se": 0.6086719910623577
+  },
+  "OpenAI text-embedding-3-small": {
+   "mean": 9.4,
+   "se": 0.5725391990665802
+  },
+  "Qwen3-VL-Embedding-8B": {
+   "mean": 8.65,
+   "se": 0.5656340569049704
+  },
+  "Voyage voyage-3.5": {
+   "mean": 9.6,
+   "se": 0.5975667116429367
+  },
+  "mxbai-embed-large-v1": {
+   "mean": 8.641666666666667,
+   "se": 0.5655772148162022
+  },
+  "nv-embedqa-e5-v5": {
+   "mean": 8.575,
+   "se": 0.5407279923970663
+  }
+ }
+}
