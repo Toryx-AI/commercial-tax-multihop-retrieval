@@ -23,7 +23,7 @@ import json, os
 import numpy as np
 
 R = "data/results"
-B = 10000
+B = 100000
 SEED = 42
 
 # display name -> (file, key)

@@ -19,7 +19,7 @@ NVEMBED_PERQ = "data/results/nvembed_variant_sweep_perq.json"
 NEMOTRON_PERQ = "data/results/nemotron_variant_sweep_perq.json"
 NV_KEY = "web-search|title+text"        # NV-Embed-v2's best variant on the matched corpus
 OUT = "data/results/headline_paired_bootstrap.json"
-B = 10000
+B = 100000
 SEED = 42
 
 
