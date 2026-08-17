@@ -1,5 +1,7 @@
 # The Commercial Tax — replication artifacts
 
+**Paper:** [`paper/commercial_tax_v11.pdf`](paper/commercial_tax_v11.pdf) (23 pp., final, 2026-08-17; arXiv ID to follow once announced).
+
 Harness code and measurement artifacts for *The Commercial Tax: Rent-vs-Own Blind Spots in Multi-Hop
 Retrieval Benchmarks* (Sanchez & Dehnad).
 
