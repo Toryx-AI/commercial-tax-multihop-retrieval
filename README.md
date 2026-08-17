@@ -170,3 +170,6 @@ Code in `code/` is MIT (`LICENSE`). Measurement outputs in `results/` are CC BY 
 (`LICENSE-DATA`). Neither covers the upstream MuSiQue corpus or any third-party model weights,
 which carry their own terms — including NV-Embed-v2, which is `cc-by-nc-4.0` and is the subject of
 this paper.
+
+
+Disclosure of AI AssistanceThe authors used Gemini 3.6 Flash and Claude Opus 5 for drafting, editing, code review, and figure refinement; all scientific content, methodology, analysis, and conclusions were developed and verified by the authors, who take full responsibility for the paper.
