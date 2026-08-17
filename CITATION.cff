@@ -10,6 +10,9 @@ authors:
     given-names: Kosrow
     affiliation: Columbia University
 repository-code: "https://github.com/Toryx-AI/commercial-tax-multihop-retrieval"
+doi: 10.5281/zenodo.21972866
+version: v1.0-paper1
+date-released: 2026-08-17
 license: MIT
 keywords:
   - retrieval-augmented generation
