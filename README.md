@@ -162,7 +162,7 @@ token-overlap F1 over the gold answer and its aliases.
 order, for every entrant. Any confidence interval or paired test in the paper can be recomputed
 from these without a GPU — and comparisons we did not think to run are available to you.
 
-Embedding matrices (`.npy`, ~3GB including the replicate's independent corpus embedding) are not in git. Companion dataset: `toryx-ai/commercial-tax-musique-embeddings` on HuggingFace (pinned revision cited in the paper).
+Embedding matrices (`.npy`, 2.4 GB: all thirteen entrants, both corpus formats where measured, and the replicate's independent anchor embedding) are not in git. Companion dataset: [`toryx-ai/commercial-tax-musique-embeddings`](https://huggingface.co/datasets/toryx-ai/commercial-tax-musique-embeddings) on HuggingFace, pinned at revision `bd00a9c32c00fe9007f9244475f1b11ba7d51f69` (the revision the paper cites; `SHA256SUMS` in the dataset covers every matrix). Archived snapshot of this repository: Zenodo DOI, added below once minted.
 
 ## Licence
 
