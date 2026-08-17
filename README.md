@@ -17,26 +17,26 @@ are percentile bootstrap over the 1,000 evaluation questions, seed 42; the panel
 
 | Embedder | Licence | R@5 | 95% CI | R@10 | vs top |
 |---|---|---|---|---|---|
-| Nemotron-3-Embed-8B | Commercial | 69.79 | [68.11, 71.44] | 77.54 | — |
-| NV-Embed-v2 | **Non-commercial** | 69.55 | [67.92, 71.22] | 78.12 | +0.24, p=0.69 **ns** |
-| Gemini embedding-001 | Commercial | 67.24 | [65.49, 69.01] | 76.35 | +2.55, p=0.0003 sig |
-| Nemotron-3-Embed-1B | Commercial | 64.32 | [62.64, 65.97] | 72.79 | +5.47 sig |
-| Llama-Nemotron-Embed-1B-v2 | Commercial | 63.73 | [62.02, 65.42] | 71.35 | +6.06 sig |
-| Cohere Embed v4 | Commercial | 60.21 | [58.44, 61.97] | 69.08 | +9.58 sig |
-| Qwen3-VL-Embedding-8B | Free/open | 59.88 | [58.15, 61.60] | 68.53 | +9.91 sig |
-| OpenAI text-embedding-3-large | Commercial | 59.48 | [57.69, 61.27] | 70.15 | +10.31 sig |
-| nv-embedqa-e5-v5 | Commercial | 57.69 | [55.97, 59.35] | 66.27 | +12.10 sig |
-| mxbai-embed-large-v1 | Free/open | 55.71 | [53.87, 57.54] | 64.35 | +14.08 sig |
+| Nemotron-3-Embed-8B | Commercial | 69.79 | [68.13, 71.43] | 77.54 | — |
+| NV-Embed-v2 | **Non-commercial** | 69.55 | [67.89, 71.20] | 78.12 | +0.24, p=0.69 **ns** |
+| Gemini embedding-001 | Commercial | 67.24 | [65.45, 69.01] | 76.35 | +2.55, p=0.0003 sig |
+| Nemotron-3-Embed-1B | Commercial | 64.32 | [62.63, 65.98] | 72.79 | +5.47 sig |
+| Llama-Nemotron-Embed-1B-v2 | Commercial | 63.73 | [62.03, 65.42] | 71.35 | +6.06 sig |
+| Cohere Embed v4 | Commercial | 60.21 | [58.45, 61.98] | 69.08 | +9.58 sig |
+| Qwen3-VL-Embedding-8B | Free/open | 59.88 | [58.16, 61.60] | 68.53 | +9.91 sig |
+| OpenAI text-embedding-3-large | Commercial | 59.48 | [57.68, 61.29] | 70.15 | +10.31 sig |
+| nv-embedqa-e5-v5 | Commercial | 57.69 | [55.98, 59.40] | 66.27 | +12.10 sig |
+| mxbai-embed-large-v1 | Free/open | 55.71 | [53.85, 57.56] | 64.35 | +14.08 sig |
 | OpenAI text-embedding-3-small | Commercial | 55.38 | [53.62, 57.12] | 64.78 | +14.42 sig |
-| BGE-M3 | Free/open | 54.93 | [53.23, 56.59] | 62.89 | +14.87 sig |
-| Voyage voyage-3.5 | Commercial | 54.08 | [52.27, 55.92] | 63.68 | +15.71 sig |
+| BGE-M3 | Free/open | 54.93 | [53.23, 56.62] | 62.89 | +14.87 sig |
+| Voyage voyage-3.5 | Commercial | 54.08 | [52.24, 55.93] | 63.68 | +15.71 sig |
 
 **NV-Embed-v2 is the only entrant statistically indistinguishable from the top model** — and the claim survives correction: under Holm–Bonferroni over the twelve comparisons all eleven rejections stand (`results/panel_multiplicity.json`), and under simultaneous Dunnett-type intervals eleven of twelve exclude zero with NV-Embed-v2 the sole exception (`results/panel_simultaneous_ci.json`). The
 commercial tax, measured against the non-commercial anchor:
 
 | | diff | 95% CI | p | |
 |---|---|---|---|---|
-| Best commercial **before** Nemotron (Gemini embedding-001) | +2.31 | [+0.91, +3.69] | 0.002 | **significant** |
+| Best commercial **before** Nemotron (Gemini embedding-001) | +2.31 | [+0.91, +3.71] | 0.001 | **significant** |
 | Best commercial **after** Nemotron (Nemotron-3-Embed-8B) | −0.24 | [−1.43, +0.94] | 0.69 | not significant |
 
 The tax was real and recent. It has closed at the frontier — not across the category: eleven of
