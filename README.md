@@ -172,4 +172,6 @@ which carry their own terms — including NV-Embed-v2, which is `cc-by-nc-4.0` a
 this paper.
 
 
-Disclosure of AI AssistanceThe authors used Gemini 3.6 Flash and Claude Opus 5 for drafting, editing, code review, and figure refinement; all scientific content, methodology, analysis, and conclusions were developed and verified by the authors, who take full responsibility for the paper.
+## Disclosure of AI Assistance ##
+
+The authors used Gemini 3.6 Flash and Claude Opus 5 for drafting, editing, code review, and figure refinement; all scientific content, methodology, analysis, and conclusions were developed and verified by the authors, who take full responsibility for the paper.
