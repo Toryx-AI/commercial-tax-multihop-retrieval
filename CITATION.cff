@@ -20,3 +20,17 @@ keywords:
   - embedding models
   - software licensing
   - benchmark reproducibility
+preferred-citation:
+  type: article
+  title: "The Commercial Tax: Rent-vs-Own Blind Spots in Multi-Hop Retrieval Benchmarks"
+  authors:
+    - family-names: Sanchez
+      given-names: Luis M.
+    - family-names: Dehnad
+      given-names: Kosrow
+  year: 2026
+  journal: arXiv preprint
+  identifiers:
+    - type: other
+      value: "arXiv:2608.16096"
+  url: "https://arxiv.org/abs/2608.16096"
